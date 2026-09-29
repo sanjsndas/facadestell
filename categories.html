@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories · Facades Tell Stories</title>
+  <meta name="description" content="Browse all topics and categories from Facades Tell Stories — interior design, architecture, materials, lighting, and the stories buildings tell.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories · Facades Tell Stories">
+  <meta property="og:description" content="Browse all topics and categories from the independent journal on interior design, architecture, and the stories buildings tell.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://facadestellstories.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop">
+  <link rel="canonical" href="https://facadestellstories.com/categories.html">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Categories · Facades Tell Stories",
+    "url": "https://facadestellstories.com/categories.html",
+    "description": "Browse all topics and categories from Facades Tell Stories.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Facades Tell Stories"
+    }
+  }
+  </script>
+  <style>
+    /* ---------- RESET & GLOBAL ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background-color: #fbfaf8;
+      color: #1e1e1e;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+
+    h1, h2, h3, h4, h5, h6, .sans {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: #9b6b4b;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #6b6b6b;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* ---------- HEADER (same as index) ---------- */
+    .site-header {
+      border-bottom: 1px solid #e6e1da;
+      padding: 20px 0 16px;
+      background: #fbfaf8;
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.9rem;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .logo span {
+      color: #9b6b4b;
+      font-weight: 300;
+    }
+
+    .main-nav ul {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .main-nav a {
+      padding-bottom: 4px;
+      border-bottom: 1px solid transparent;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      border-bottom-color: #9b6b4b;
+      color: #9b6b4b;
+    }
+
+    /* ---------- PAGE TITLE ---------- */
+    .page-title {
+      padding: 48px 0 24px;
+      border-bottom: 1px solid #e6e1da;
+    }
+
+    .page-title h1 {
+      font-size: 3.2rem;
+      line-height: 1.2;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .page-title .subhead {
+      font-size: 1.2rem;
+      color: #4a4a4a;
+      max-width: 780px;
+      font-family: 'Georgia', serif;
+      font-style: italic;
+    }
+
+    /* ---------- CATEGORIES GRID ---------- */
+    .categories-section {
+      padding: 48px 0 64px;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 16px;
+    }
+
+    .category-card {
+      background: #ffffff;
+      border: 1px solid #ede8e1;
+      border-radius: 2px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px -12px rgba(0, 0, 0, 0.12);
+      border-color: #d9c9b8;
+    }
+
+    .category-card .card-img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background-color: #e6e1da;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .category-card .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.35s ease;
+    }
+
+    .category-card:hover .card-img img {
+      transform: scale(1.03);
+    }
+
+    .category-card .card-body {
+      padding: 24px 24px 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card .card-body h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+
+    .category-card .card-body p {
+      font-size: 0.98rem;
+      color: #4a4a4a;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+
+    .category-card .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #ede8e1;
+      padding-top: 16px;
+      margin-top: auto;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b6b6b;
+    }
+
+    .category-card .card-meta .count {
+      background: #f5f1ec;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 500;
+      color: #9b6b4b;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+    }
+
+    .category-card .card-meta .arrow {
+      font-size: 1rem;
+      transition: transform 0.2s ease;
+    }
+
+    .category-card:hover .card-meta .arrow {
+      transform: translateX(4px);
+    }
+
+    .category-card .card-meta a {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #9b6b4b;
+      font-weight: 500;
+    }
+
+    .category-card .card-meta a:hover {
+      color: #6f4a31;
+    }
+
+    /* ---------- FEATURED CATEGORY ---------- */
+    .featured-category {
+      margin-bottom: 48px;
+      background: #f5f1ec;
+      border-radius: 2px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid #ede8e1;
+    }
+
+    .featured-category .featured-img {
+      min-height: 320px;
+      background: #d9c9b8;
+      overflow: hidden;
+    }
+
+    .featured-category .featured-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 320px;
+    }
+
+    .featured-category .featured-content {
+      padding: 48px 48px 48px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .featured-category .featured-content .meta {
+      margin-bottom: 8px;
+    }
+
+    .featured-category .featured-content h2 {
+      font-size: 2.4rem;
+      line-height: 1.15;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .featured-category .featured-content p {
+      color: #3a3a3a;
+      font-size: 1.05rem;
+      margin-bottom: 24px;
+      max-width: 480px;
+    }
+
+    .featured-category .featured-content .btn {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #fff;
+      background: #1e1e1e;
+      padding: 12px 28px;
+      border-radius: 2px;
+      transition: background 0.2s ease;
+      align-self: flex-start;
+    }
+
+    .featured-category .featured-content .btn:hover {
+      background: #9b6b4b;
+      color: #fff;
+    }
+
+    /* ---------- SECTION LABEL ---------- */
+    .section-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9b6b4b;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    /* ---------- FOOTER (same) ---------- */
+    .site-footer {
+      background: #1e1e1e;
+      color: #cfcfcf;
+      padding: 56px 0 32px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    @media (max-width: 800px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-grid h5 {
+      color: #fff;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+    }
+
+    .footer-grid li {
+      margin-bottom: 12px;
+    }
+
+    .footer-grid a:hover {
+      color: #d9c9b8;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #3a3a3a;
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: #9a9a9a;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      .featured-category {
+        grid-template-columns: 1fr;
+      }
+      .featured-category .featured-content {
+        padding: 32px 28px 36px;
+      }
+      .featured-category .featured-content h2 {
+        font-size: 1.8rem;
+      }
+      .featured-category .featured-img {
+        min-height: 240px;
+      }
+      .featured-category .featured-img img {
+        min-height: 240px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .page-title h1 {
+        font-size: 2.2rem;
+      }
+      .main-nav ul {
+        gap: 16px;
+        font-size: 0.8rem;
+      }
+      .logo {
+        font-size: 1.5rem;
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 0.98rem;
+      }
+      .page-title h1 {
+        font-size: 1.8rem;
+      }
+      .categories-section {
+        padding: 32px 0 48px;
+      }
+      .featured-category .featured-content {
+        padding: 24px 20px 28px;
+      }
+      .featured-category .featured-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Facades <span>Tell Stories</span></div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html" class="active">Categories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== PAGE TITLE ========== -->
+  <div class="container page-title">
+    <h1>Categories</h1>
+    <p class="subhead">Every building has a story. Browse our collection of essays, guides, and critical perspectives — organised by the themes that shape the built environment.</p>
+  </div>
+
+  <!-- ========== CATEGORIES CONTENT ========== -->
+  <div class="container categories-section">
+
+    <!-- Featured category: Interior Design -->
+    <div class="featured-category">
+      <div class="featured-img">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&h=800&fit=crop" alt="Warm modern interior with natural light and textured materials" loading="lazy">
+      </div>
+      <div class="featured-content">
+        <div class="meta">Featured category</div>
+        <h2>Interior Design</h2>
+        <p>From the poetry of a well-placed window to the quiet confidence of a perfectly proportioned room — explore how interiors shape the way we live, feel, and gather.</p>
+        <a href="#" class="btn">Explore interior design →</a>
+      </div>
+    </div>
+
+    <!-- Section label -->
+    <div class="section-label">All topics</div>
+
+    <!-- Categories grid -->
+    <div class="categories-grid">
+
+      <!-- Architecture -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=500&fit=crop" alt="Modern building facade with clean lines and shadows" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Architecture</h2>
+          <p>Essays on form, function, and the silent language of buildings — from brutalist monuments to contemporary timber towers.</p>
+          <div class="card-meta">
+            <span class="count">24 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Materials -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&h=500&fit=crop" alt="Close-up of natural stone and wood textures" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Materials</h2>
+          <p>The tactile world of stone, timber, concrete, and glass — how material choices define atmosphere, longevity, and meaning.</p>
+          <div class="card-meta">
+            <span class="count">18 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Space Planning -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=500&fit=crop" alt="Open-plan living space with careful zoning" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Space Planning</h2>
+          <p>How rooms breathe, flow, and adapt — practical wisdom on layout, proportion, and the choreography of daily life.</p>
+          <div class="card-meta">
+            <span class="count">15 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Lighting -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&h=500&fit=crop" alt="Warm pendant lights in a minimalist interior" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Lighting</h2>
+          <p>Natural light, layered illumination, and the subtle art of shadow — how light shapes mood and reveals architecture.</p>
+          <div class="card-meta">
+            <span class="count">12 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Adaptive Reuse -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&fit=crop" alt="Old industrial building converted into modern loft" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Adaptive Reuse</h2>
+          <p>When old buildings find new purpose — stories of warehouses turned homes, churches turned galleries, and the beauty of reinvention.</p>
+          <div class="card-meta">
+            <span class="count">9 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sustainability -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=500&fit=crop" alt="Green building with living facade and plants" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Sustainability</h2>
+          <p>Building with the planet in mind — passive design, low-carbon materials, and the quiet revolution of regenerative architecture.</p>
+          <div class="card-meta">
+            <span class="count">14 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Urbanism -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=500&fit=crop" alt="City street with mixed-use buildings and pedestrians" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Urbanism</h2>
+          <p>The city as a living room — sidewalks, public spaces, density, and the small decisions that make neighbourhoods feel like home.</p>
+          <div class="card-meta">
+            <span class="count">11 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Craft & Detail -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=500&fit=crop" alt="Detailed craftsmanship in wood joinery and finishes" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Craft & Detail</h2>
+          <p>Celebrating the makers and the minutiae — handcrafted joinery, bespoke hardware, and the details that reward a closer look.</p>
+          <div class="card-meta">
+            <span class="count">8 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Interviews -->
+      <article class="category-card">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=500&fit=crop" alt="Architect and designer in conversation in a studio" loading="lazy">
+        </div>
+        <div class="card-body">
+          <h2>Interviews</h2>
+          <p>Conversations with architects, designers, and thinkers — their influences, processes, and the stories behind their work.</p>
+          <div class="card-meta">
+            <span class="count">16 articles</span>
+            <a href="#">Read <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h5>Facades Tell Stories</h5>
+          <p style="color:#9a9a9a; font-size:0.85rem; line-height:1.6;">An independent journal on interior design, architecture, and the stories buildings tell.</p>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Space Planning</a></li>
+            <li><a href="#">Lighting</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>About</h5>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Facades Tell Stories. All rights reserved.</span>
+        <span>Made with care for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT (minimal) ========== -->
+  <script>
+    (function() {
+      // Smooth scroll for internal links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
